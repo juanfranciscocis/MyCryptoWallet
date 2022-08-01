@@ -3,7 +3,7 @@ package com.example.mycryptowallet2_0.FML_CONTROLLERS;
 import com.example.mycryptowallet2_0.ASSETS.C_AssetController;
 import com.example.mycryptowallet2_0.ASSETS.C_NewAsset;
 import com.example.mycryptowallet2_0.C_Files;
-import com.example.mycryptowallet2_0.Main;
+import com.example.mycryptowallet2_0.HelloApplication;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -77,7 +77,7 @@ public class CHANGE_ASSET_MENUController {
 
             //SHOWING THE INFORMATION POPUP
             Stage stage = new Stage();
-            FXMLLoader fxmlInfo = new FXMLLoader(Main.class.getResource("INFORMATION_POPUP.fxml"));
+            FXMLLoader fxmlInfo = new FXMLLoader(HelloApplication.class.getResource("INFORMATION_POPUP.fxml"));
             INFORMATION_POPUP_Controller information_popup_controller = new INFORMATION_POPUP_Controller();
             information_popup_controller.setCode(4);
             fxmlInfo.setController(information_popup_controller);
@@ -89,7 +89,7 @@ public class CHANGE_ASSET_MENUController {
         }catch (Exception e){
             //SHOWING ERROR POPUP
             Stage stage = new Stage();
-            FXMLLoader fxmlInfo = new FXMLLoader(Main.class.getResource("ERROR_POPUP.fxml"));
+            FXMLLoader fxmlInfo = new FXMLLoader(HelloApplication.class.getResource("ERROR_POPUP.fxml"));
             ERROR_POPUP_Controller error_popup_controller = new ERROR_POPUP_Controller();
             error_popup_controller.setCode(3);
             fxmlInfo.setController(error_popup_controller);
@@ -150,7 +150,7 @@ public class CHANGE_ASSET_MENUController {
 
                 //SHOWING THE INFORMATION POPUP
                 Stage stage = new Stage();
-                FXMLLoader fxmlInfo = new FXMLLoader(Main.class.getResource("INFORMATION_POPUP.fxml"));
+                FXMLLoader fxmlInfo = new FXMLLoader(HelloApplication.class.getResource("INFORMATION_POPUP.fxml"));
                 INFORMATION_POPUP_Controller information_popup_controller = new INFORMATION_POPUP_Controller();
                 information_popup_controller.setCode(5);
                 fxmlInfo.setController(information_popup_controller);
@@ -166,7 +166,7 @@ public class CHANGE_ASSET_MENUController {
                 System.out.println("ERROR CHANGING ASSET");
                 //SHOWING ERROR POPUP
                 Stage stage = new Stage();
-                FXMLLoader fxmlInfo = new FXMLLoader(Main.class.getResource("ERROR_POPUP.fxml"));
+                FXMLLoader fxmlInfo = new FXMLLoader(HelloApplication.class.getResource("ERROR_POPUP.fxml"));
                 ERROR_POPUP_Controller error_popup_controller = new ERROR_POPUP_Controller();
                 error_popup_controller.setCode(2);
                 fxmlInfo.setController(error_popup_controller);
