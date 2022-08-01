@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <AnchorPane layoutX="3.0" layoutY="3.0" prefHeight="131.0" prefWidth="198.0" style="-fx-background-radius: 10; -fx-background-color: #FFFFFF#FFFFFF; -fx-effect: dropshadow(three-pass-box,grey,10,0,0,15);">
+         <children>
+            <AnchorPane layoutY="34.0" prefHeight="1.0" prefWidth="250.0" style="-fx-background-color: #EFEFEF#EFEFEF;" />
+            <Label layoutX="14.0" layoutY="10.0" style="-fx-text-inner-color: #707070;" text="INFORMATION">
+               <font>
+                  <Font name="Montserrat Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="infoToShow" alignment="CENTER" layoutX="23.0" layoutY="39.0" prefHeight="88.0" prefWidth="213.0" text="!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" textFill="#aba5a5" wrapText="true">
+               <font>
+                  <Font name="Poppins Regular" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

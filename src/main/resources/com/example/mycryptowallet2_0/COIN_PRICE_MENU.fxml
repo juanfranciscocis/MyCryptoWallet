@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mycryptowallet2_0.FML_CONTROLLERS.COIN_PRICE_MEMUController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="230.0" prefWidth="280.0" style="-fx-background-radius: 10; -fx-background-color: #FFFFFF#FFFFFF; -fx-effect: dropshadow(three-pass-box,grey,10,0,0,15);">
+         <children>
+            <AnchorPane layoutY="48.0" prefHeight="1.0" prefWidth="280.0" style="-fx-background-color: #EFEFEF#EFEFEF;" />
+            <Label layoutX="23.0" layoutY="17.0" style="-fx-text-inner-color: #707070;" text="CHECK COIN PRICE">
+               <font>
+                  <Font name="Montserrat Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="56.0" style="-fx-opacity: 0.5;" text="ID CODE" textFill="#58595b">
+               <font>
+                  <Font name="Poppins Regular" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="14.0" layoutY="86.0" prefHeight="50.0" prefWidth="165.0" style="-fx-background-radius: 15; -fx-background-color: #F7F7F7;">
+               <children>
+                  <TextField fx:id="enteredIDCodeLTextField" layoutX="4.0" layoutY="10.0" prefHeight="29.0" prefWidth="151.0" promptText="Enter ID" style="-fx-background-color: transparent;">
+                     <font>
+                        <Font name="Poppins Regular" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="205.0" layoutY="86.0" onMousePressed="#checkPriceButton" prefHeight="50.0" prefWidth="62.0" style="-fx-background-radius: 15; -fx-background-color: #F7F7F7;">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="62.0" layoutX="7.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ASSETS/vuesax_bulk_arrow_right.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="161.0" prefHeight="50.0" prefWidth="253.0" style="-fx-background-radius: 15; -fx-background-color: #D5D5D5#D5D5D5;">
+               <children>
+                  <Label fx:id="priceToShowLabel" alignment="CENTER" layoutY="9.0" prefWidth="253.0" text="\$1400,000.00" textFill="#58595b">
+                     <font>
+                        <Font name="Poppins Regular" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="242.0" layoutY="14.0" onMousePressed="#informationCheckCoinPriceMenu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ASSETS/vuesax_bulk_search_status.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
