@@ -1,7 +1,7 @@
 package com.example.mycryptowallet2_0.FML_CONTROLLERS;
 
 import com.example.mycryptowallet2_0.C_CoinGeckoApi;
-import com.example.mycryptowallet2_0.HelloApplication;
+import com.example.mycryptowallet2_0.Main;
 import com.example.mycryptowallet2_0.USER_HELPER.C_Exceptions;
 //import com.mashape.unirest.http.exceptions.UnirestException;
 import javafx.fxml.FXML;
@@ -41,7 +41,7 @@ public class COIN_PRICE_MEMUController {
     @FXML
     void informationCheckCoinPriceMenu(MouseEvent event) throws IOException {
         Stage stage = new Stage();
-        FXMLLoader fxmlInfo = new FXMLLoader(HelloApplication.class.getResource("INFORMATION_POPUP.fxml"));
+        FXMLLoader fxmlInfo = new FXMLLoader(Main.class.getResource("INFORMATION_POPUP.fxml"));
         INFORMATION_POPUP_Controller information_popup_controller = new INFORMATION_POPUP_Controller();
         information_popup_controller.setCode(1);
         fxmlInfo.setController(information_popup_controller);

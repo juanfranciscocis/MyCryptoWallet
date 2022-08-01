@@ -3,7 +3,7 @@ package com.example.mycryptowallet2_0.FML_CONTROLLERS;
 import com.example.mycryptowallet2_0.ASSETS.C_AssetController;
 import com.example.mycryptowallet2_0.ASSETS.C_NewAsset;
 import com.example.mycryptowallet2_0.C_Files;
-import com.example.mycryptowallet2_0.HelloApplication;
+import com.example.mycryptowallet2_0.Main;
 //import com.mashape.unirest.http.exceptions.UnirestException;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -231,7 +231,7 @@ public class MAIN_MENUController {
     @FXML
     void changeAssetsButton(MouseEvent event) throws IOException {
         Stage stage = new Stage();
-        FXMLLoader fmxlChangeAssetsMenu = new FXMLLoader(HelloApplication.class.getResource("CHANGE_ASSET_MENU.fxml"));
+        FXMLLoader fmxlChangeAssetsMenu = new FXMLLoader(Main.class.getResource("CHANGE_ASSET_MENU.fxml"));
         Scene scene = new Scene(fmxlChangeAssetsMenu.load());
         stage.setTitle("CHANGE ASSETS");
         stage.setScene(scene);
@@ -241,7 +241,7 @@ public class MAIN_MENUController {
     @FXML
     void checkCoinPriceButton(MouseEvent event) throws IOException {
         Stage stage = new Stage();
-        FXMLLoader fxmlCoincheckerMenu = new FXMLLoader(HelloApplication.class.getResource("COIN_PRICE_MENU.fxml"));
+        FXMLLoader fxmlCoincheckerMenu = new FXMLLoader(Main.class.getResource("COIN_PRICE_MENU.fxml"));
         Scene scene = new Scene(fxmlCoincheckerMenu.load());
         stage.setTitle("CHECK PRICES");
         stage.setScene(scene);
@@ -252,7 +252,7 @@ public class MAIN_MENUController {
     @FXML
     void newAssetButton(MouseEvent event) throws IOException {
         Stage stage = new Stage();
-        FXMLLoader fxmlCoincheckerMenu = new FXMLLoader(HelloApplication.class.getResource("NEW_ASSET_MENU.fxml"));
+        FXMLLoader fxmlCoincheckerMenu = new FXMLLoader(Main.class.getResource("NEW_ASSET_MENU.fxml"));
         Scene scene = new Scene(fxmlCoincheckerMenu.load());
         stage.setTitle("ADD CRYPTO TO PORTAFOLIO");
         stage.setScene(scene);
@@ -265,7 +265,7 @@ public class MAIN_MENUController {
         refreshData();
         //SHOWING THE INFORMATION POPUP
         Stage stage = new Stage();
-        FXMLLoader fxmlInfo = new FXMLLoader(HelloApplication.class.getResource("INFORMATION_POPUP.fxml"));
+        FXMLLoader fxmlInfo = new FXMLLoader(Main.class.getResource("INFORMATION_POPUP.fxml"));
         INFORMATION_POPUP_Controller information_popup_controller = new INFORMATION_POPUP_Controller();
         information_popup_controller.setCode(6);
         fxmlInfo.setController(information_popup_controller);
