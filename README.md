@@ -35,3 +35,15 @@ Please first share the bug with me by emailing me at juanfrancistm2011@icloud.co
 
 In case you have knowlage on java prgramming and you want to take a look at my code please do so. Remember to pull a request so that everyone can benefit from you help.
 
+## I'm looking your CV (Curriculum Vitae), where can I find useful info about this project?
+This is my most ambitious project, is a still going product that I will love to someday finish and make some revenue from it. The code is 100% written in Java, using Java FX. My CryptoWallet needs a few touches here and there but being a student is kind of a problem and that's why this is a public program.
+
+Take a look at some photos here:
+
+<p float="left">
+  <img src="https://github.com/juanfranciscocis/MyCryptoWallet/blob/7cdf4b9897f28b4cbe123375d36901264275f8d9/README%20IMAGES/1.png"width="1000"/>
+  <img src="https://github.com/juanfranciscocis/MyCryptoWallet/blob/7cdf4b9897f28b4cbe123375d36901264275f8d9/README%20IMAGES/2.png"width="500"/>
+  <img src="https://github.com/juanfranciscocis/MyCryptoWallet/blob/7cdf4b9897f28b4cbe123375d36901264275f8d9/README%20IMAGES/3.png"width="500"/>
+  <img src="https://github.com/juanfranciscocis/MyCryptoWallet/blob/7cdf4b9897f28b4cbe123375d36901264275f8d9/README%20IMAGES/4.png"width="500"/>
+</p>
+
